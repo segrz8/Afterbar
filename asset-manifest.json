@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Afterbar/static/css/main.b282a9cf.chunk.css",
+    "main.js": "/Afterbar/static/js/main.469f9661.chunk.js",
+    "main.js.map": "/Afterbar/static/js/main.469f9661.chunk.js.map",
+    "runtime-main.js": "/Afterbar/static/js/runtime-main.7f38874c.js",
+    "runtime-main.js.map": "/Afterbar/static/js/runtime-main.7f38874c.js.map",
+    "static/js/2.149b93aa.chunk.js": "/Afterbar/static/js/2.149b93aa.chunk.js",
+    "static/js/2.149b93aa.chunk.js.map": "/Afterbar/static/js/2.149b93aa.chunk.js.map",
+    "index.html": "/Afterbar/index.html",
+    "precache-manifest.fc73e38e16cbe51938cb21f9c38708b3.js": "/Afterbar/precache-manifest.fc73e38e16cbe51938cb21f9c38708b3.js",
+    "service-worker.js": "/Afterbar/service-worker.js",
+    "static/css/main.b282a9cf.chunk.css.map": "/Afterbar/static/css/main.b282a9cf.chunk.css.map",
+    "static/js/2.149b93aa.chunk.js.LICENSE.txt": "/Afterbar/static/js/2.149b93aa.chunk.js.LICENSE.txt",
+    "static/media/i4.jpg": "/Afterbar/static/media/i4.a16e723c.jpg",
+    "static/media/i5.jpg": "/Afterbar/static/media/i5.9ede4596.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f38874c.js",
+    "static/js/2.149b93aa.chunk.js",
+    "static/css/main.b282a9cf.chunk.css",
+    "static/js/main.469f9661.chunk.js"
+  ]
+}
