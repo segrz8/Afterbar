@@ -7,12 +7,15 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #3a3a3a;
-    background-color: #000000;
-    color: white;
+    //     background-color: #000000;
+    //     color: white;
 }
 
 .App {
+    // scroll-behavior: smooth;
+    background-color: #000000;
+    color: white;
+
     .Logo {
         position: absolute;
         top: 0;
@@ -56,11 +59,11 @@ html {
         position: absolute;
         // background-color: yellowgreen;
         width: 220px;
-        height: 230px;
+        height: 250px;
         right: 20px;
         bottom: 20px;
 
-        .btn {
+        &__btn {
             // position: absolute;
             right: 0;
             padding: 3px 15px;
@@ -70,10 +73,8 @@ html {
             // text-transform: uppercase;
             // font-weight: 900;
             border: 2px solid white;
-            cursor: pointer;
             transition: .2s;
             background-color: black;
-            color: white;
             text-align: center;
             margin-bottom: 8px;
             // backdrop-filter: blur(4px);
@@ -104,6 +105,7 @@ html {
             padding-bottom: 15px;
             text-transform: uppercase;
             font-weight: 900;
+            font-size: 2em;
         }
     }
 
@@ -138,6 +140,17 @@ html {
 
         p {
             color: rgb(92, 92, 92);
+        }
+    }
+
+    .Contact {
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
         }
     }
 }

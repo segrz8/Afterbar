@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from './Components/Slider'
 import simpleParallax from 'simple-parallax-js'
 
@@ -57,11 +57,11 @@ class App extends React.Component {
 					</picture>
 				</div>
 				<div className="ButtonsContainer">
-					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnAbout btn">o nas</div>
-					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnOffer btn">oferta</div>
-					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnCard btn">karta drinków</div>
-					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnGallery btn">galeria</div>
-					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnContact btn">kontakt</div>
+					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnAbout ButtonsContainer__btn">o nas</div>
+					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnOffer ButtonsContainer__btn">oferta</div>
+					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnCard ButtonsContainer__btn">karta drinków</div>
+					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnGallery ButtonsContainer__btn">galeria</div>
+					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnContact ButtonsContainer__btn">kontakt</div>
 				</div>
 				<section className="About txt">
 					<h1>O nas</h1>
@@ -82,6 +82,10 @@ class App extends React.Component {
 				</section>
 				<section className="Gallery">
 					<Slider />
+				</section>
+				<section className="Contact txt">
+					<p>Tel. 786 979 780</p>
+					<p><a target="_blank" rel="noopener noreferrer" href="mailto: Afterbar.pl@gmail.com">e-mail: Afterbar.pl@gmail.com</a></p>
 				</section>
 			</div>
 		);
