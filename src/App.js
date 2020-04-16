@@ -1,19 +1,23 @@
 import React from 'react';
 import './App.scss';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Slider from './Components/Slider'
 import simpleParallax from 'simple-parallax-js'
 
 import logo from '../src/img/dummy/afterbarLogo.jpg'
 import img1 from '../src/img/dummy/i5.jpg'
 import img2 from '../src/img/dummy/i4.jpg'
 
-// const card = [
-// 	{
-// 		// image:,
-// 		drink: 'Aperol Spritz',
-// 		ingredients: 'pomarańcze',
-// 		price: '20 zł',
-// 	},
-// ]
+const cardList = [
+	{
+		drinkName: 'Mojito',
+		ingredients: 'jasny rum, limonka, mięta, cukier trzcinowy, woda gazowana',
+	},
+	{
+		drinkName: 'Cuba libre',
+		ingredients: 'jasny rum, sok z limonki, cola',
+	},
+]
 
 class App extends React.Component {
 
@@ -28,6 +32,16 @@ class App extends React.Component {
 	}
 
 	render() {
+
+		const card = cardList.map(item => {
+			return (
+				<div key={item.drinkName} className="Card__drink">
+					<h2>{item.drinkName}</h2>
+					<p>{item.ingredients}</p>
+				</div>
+			)
+		})
+
 		return (
 			<div className="App">
 				<div className="Logo">
@@ -51,7 +65,7 @@ class App extends React.Component {
 				</div>
 				<section className="About txt">
 					<h1>O nas</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, at! Fugit adipisci voluptatibus ullam minima reprehenderit pariatur, veritatis ex commodi possimus doloremque labore iusto omnis, temporibus fugiat optio expedita non eligendi sapiente ducimus, et delectus. Repellendus asperiores fuga optio unde.</p>
+					<p>Afterbar to mobilny drink bar zajmujący się organizacją imprez takich jak: wesela, 18-nastki, studniówki itp. Kilkuletna przygoda za barem skłoniła nas do założenia swojej moblilnej jednostki. Praca na tym stanowisku sprawia nam ogromną radość, posiadamy tylko jeden drink bar w ofercie, jeden, którym sterują ludzie dla których bar to hobby a nie tylko możliwość zarobku. Zamawiając nas na swoją impreze, zamawiasz właścicieli strony, dla któych dobra atmosfera i zadowoleni klienci są najważniejsze. Do zobaczenia :)</p>
 				</section>
 				<div className="photo">
 					<picture>
@@ -61,10 +75,13 @@ class App extends React.Component {
 				</div>
 				<section className="Offer txt">
 					<h1>Oferta</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, at! Fugit adipisci voluptatibus ullam minima reprehenderit pariatur, veritatis ex commodi possimus doloremque labore iusto omnis, temporibus fugiat optio expedita non eligendi sapiente ducimus, et delectus. Repellendus asperiores fuga optio unde.</p>
+					<p>W ofercie posiadamy jeden drink bar, którym dowodzimy sami. Pełen profesjonalizm i duże doświadczenie. Chcesz wiedzieć więcej? Wjedz w zakładkę <i>kontakt</i> i zadzwoń do nas! </p>
 				</section>
 				<section className="Card">
-					{/* {card} */}
+					{card}
+				</section>
+				<section className="Gallery">
+					<Slider />
 				</section>
 			</div>
 		);
