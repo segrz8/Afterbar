@@ -121,7 +121,15 @@ html {
         background-color: #fff;
 
         &__drink {
+            transition: .5s;
+            transform: translate(-30%);
+            opacity: 0;
             padding: 20px 20px;
+
+            &--visible {
+                opacity: 1;
+                transform: translate(0);
+            }
 
             &:nth-child(even) {
                 background-color: #fff44f;
@@ -152,5 +160,17 @@ html {
             color: white;
             text-decoration: none;
         }
+    }
+
+    .Footer {
+        background-color: white;
+        text-align: center;
+        color: rgb(92, 92, 92);
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .lemonYellow {
+        color: #fff44f;
     }
 }

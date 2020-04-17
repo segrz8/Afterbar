@@ -10,12 +10,29 @@ import img2 from '../src/img/dummy/i4.jpg'
 
 const cardList = [
 	{
+		id: 0,
 		drinkName: 'Mojito',
 		ingredients: 'jasny rum, limonka, mięta, cukier trzcinowy, woda gazowana',
 	},
 	{
+		id: 1,
 		drinkName: 'Cuba libre',
 		ingredients: 'jasny rum, sok z limonki, cola',
+	},
+	{
+		id: 2,
+		drinkName: 'Malibu Sunrise',
+		ingredients: 'malibu, sok pomarańczowy, grenadyna',
+	},
+	{
+		id: 3,
+		drinkName: 'Blue Shark',
+		ingredients: 'wódka, blue curacao, gin, sok z cytryny',
+	},
+	{
+		id: 4,
+		drinkName: 'John Collins',
+		ingredients: 'gin, sok z cytryny, syrop cukrowy, woda gazowana',
 	},
 ]
 
@@ -23,19 +40,44 @@ class App extends React.Component {
 
 	// state = {}
 
+	handleScroll = (section) => {
+		document.querySelector(`.${section}`).scrollIntoView({
+			behavior: 'smooth',
+		})
+	}
+
+	handleItemAppear = () => {
+		for (let i = 0; i < cardList.length; i++) {
+			const scrollValue = window.scrollY
+			const item = document.querySelector(`.item${i}`)
+			const itemTop = item.offsetTop
+			const itemHeight = item.offsetHeight
+			const windowHeight = window.innerHeight
+			if (scrollValue > itemTop + itemHeight - windowHeight) {
+				item.classList.add(`Card__drink--visible`)
+			}
+		}
+	}
+
 	componentDidMount = () => {
 		const images = document.getElementsByClassName('thumbnail');
 		new simpleParallax(images, {
 			scale: 1.15,
 			delay: .8,
 		});
+
+		window.addEventListener('scroll', this.handleItemAppear)
+	}
+
+	componentWillUnmount = () => {
+		window.removeEventListener('scroll', this.handleItemAppear)
 	}
 
 	render() {
 
 		const card = cardList.map(item => {
 			return (
-				<div key={item.drinkName} className="Card__drink">
+				<div key={item.drinkName} className={`Card__drink item${item.id}`}>
 					<h2>{item.drinkName}</h2>
 					<p>{item.ingredients}</p>
 				</div>
@@ -58,14 +100,14 @@ class App extends React.Component {
 				</div>
 				<div className="ButtonsContainer">
 					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnAbout ButtonsContainer__btn">o nas</div>
-					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnOffer ButtonsContainer__btn">oferta</div>
-					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnCard ButtonsContainer__btn">karta drinków</div>
-					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnGallery ButtonsContainer__btn">galeria</div>
-					<div onClick={() => this.handleScroll('About')} className="ButtonsContainer__btnContact ButtonsContainer__btn">kontakt</div>
+					<div onClick={() => this.handleScroll('Offer')} className="ButtonsContainer__btnOffer ButtonsContainer__btn">oferta</div>
+					<div onClick={() => this.handleScroll('Card')} className="ButtonsContainer__btnCard ButtonsContainer__btn">karta drinków</div>
+					<div onClick={() => this.handleScroll('Gallery')} className="ButtonsContainer__btnGallery ButtonsContainer__btn">galeria</div>
+					<div onClick={() => this.handleScroll('Contact')} className="ButtonsContainer__btnContact ButtonsContainer__btn">kontakt</div>
 				</div>
 				<section className="About txt">
 					<h1>O nas</h1>
-					<p>Afterbar to mobilny drink bar zajmujący się organizacją imprez takich jak: wesela, 18-nastki, studniówki itp. Kilkuletna przygoda za barem skłoniła nas do założenia swojej moblilnej jednostki. Praca na tym stanowisku sprawia nam ogromną radość, posiadamy tylko jeden drink bar w ofercie, jeden, którym sterują ludzie dla których bar to hobby a nie tylko możliwość zarobku. Zamawiając nas na swoją impreze, zamawiasz właścicieli strony, dla któych dobra atmosfera i zadowoleni klienci są najważniejsze. Do zobaczenia :)</p>
+					<p>Afterbar to mobilny drink bar zajmujący się organizacją imprez takich jak: wesela, 18-nastki, studniówki itp. Kilkuletna przygoda za barem skłoniła nas do założenia swojej moblilnej jednostki. Praca na tym stanowisku sprawia nam ogromną radość, posiadamy tylko jeden drink bar w ofercie, jeden, którym sterują ludzie dla których bar to hobby a nie tylko możliwość zarobku. Zamawiając nas na swoją impreze, zamawiasz właścicieli strony, dla któych dobra atmosfera i zadowoleni klienci są najważniejsze. Do zobaczenia <i class="fas fa-smile lemonYellow"></i></p>
 				</section>
 				<div className="photo">
 					<picture>
@@ -75,7 +117,7 @@ class App extends React.Component {
 				</div>
 				<section className="Offer txt">
 					<h1>Oferta</h1>
-					<p>W ofercie posiadamy jeden drink bar, którym dowodzimy sami. Pełen profesjonalizm i duże doświadczenie. Chcesz wiedzieć więcej? Wjedz w zakładkę <i>kontakt</i> i zadzwoń do nas! </p>
+					<p>W ofercie posiadamy jeden drink bar, którym dowodzimy sami. Pełen profesjonalizm i duże doświadczenie. Chcesz wiedzieć więcej? Wjedz w zakładkę <span onClick={() => this.handleScroll('Contact')}><i class="fas fa-hand-point-right lemonYellow"></i><i>kontakt</i></span> i zadzwoń do nas! </p>
 				</section>
 				<section className="Card">
 					{card}
@@ -87,6 +129,9 @@ class App extends React.Component {
 					<p>Tel. 786 979 780</p>
 					<p><a target="_blank" rel="noopener noreferrer" href="mailto: Afterbar.pl@gmail.com">e-mail: Afterbar.pl@gmail.com</a></p>
 				</section>
+				<footer className="Footer">
+					<p>Copyright © 2020 Afterbar - wszelkie prawa zastrzeżone</p>
+				</footer>
 			</div>
 		);
 	}
