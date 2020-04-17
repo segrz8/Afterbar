@@ -1,25 +1,34 @@
 {
   "files": {
-    "main.css": "/Afterbar/static/css/main.c4b905d8.chunk.css",
-    "main.js": "/Afterbar/static/js/main.aafb84fa.chunk.js",
-    "main.js.map": "/Afterbar/static/js/main.aafb84fa.chunk.js.map",
+    "main.css": "/Afterbar/static/css/main.fa692f56.chunk.css",
+    "main.js": "/Afterbar/static/js/main.9aec8c70.chunk.js",
+    "main.js.map": "/Afterbar/static/js/main.9aec8c70.chunk.js.map",
     "runtime-main.js": "/Afterbar/static/js/runtime-main.7f38874c.js",
     "runtime-main.js.map": "/Afterbar/static/js/runtime-main.7f38874c.js.map",
-    "static/js/2.4f10aa6f.chunk.js": "/Afterbar/static/js/2.4f10aa6f.chunk.js",
-    "static/js/2.4f10aa6f.chunk.js.map": "/Afterbar/static/js/2.4f10aa6f.chunk.js.map",
+    "static/css/2.de424728.chunk.css": "/Afterbar/static/css/2.de424728.chunk.css",
+    "static/js/2.8aefe51e.chunk.js": "/Afterbar/static/js/2.8aefe51e.chunk.js",
+    "static/js/2.8aefe51e.chunk.js.map": "/Afterbar/static/js/2.8aefe51e.chunk.js.map",
     "index.html": "/Afterbar/index.html",
-    "precache-manifest.7af380c4a564468be5140e1e761abf33.js": "/Afterbar/precache-manifest.7af380c4a564468be5140e1e761abf33.js",
+    "precache-manifest.f14af806a063a9d30670bb1556c845e4.js": "/Afterbar/precache-manifest.f14af806a063a9d30670bb1556c845e4.js",
     "service-worker.js": "/Afterbar/service-worker.js",
-    "static/css/main.c4b905d8.chunk.css.map": "/Afterbar/static/css/main.c4b905d8.chunk.css.map",
-    "static/js/2.4f10aa6f.chunk.js.LICENSE.txt": "/Afterbar/static/js/2.4f10aa6f.chunk.js.LICENSE.txt",
+    "static/css/2.de424728.chunk.css.map": "/Afterbar/static/css/2.de424728.chunk.css.map",
+    "static/css/main.fa692f56.chunk.css.map": "/Afterbar/static/css/main.fa692f56.chunk.css.map",
+    "static/js/2.8aefe51e.chunk.js.LICENSE.txt": "/Afterbar/static/js/2.8aefe51e.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/Afterbar/static/media/1.9c8b2429.jpg",
+    "static/media/2.jpg": "/Afterbar/static/media/2.b00e623e.jpg",
+    "static/media/3.jpg": "/Afterbar/static/media/3.809d7cd3.jpg",
+    "static/media/4.jpg": "/Afterbar/static/media/4.5b7e34bb.jpg",
+    "static/media/5.jpg": "/Afterbar/static/media/5.4f36db9c.jpg",
+    "static/media/6.jpg": "/Afterbar/static/media/6.e05e80e2.jpg",
     "static/media/afterbarLogo.jpg": "/Afterbar/static/media/afterbarLogo.595ed365.jpg",
-    "static/media/i4.jpg": "/Afterbar/static/media/i4.a16e723c.jpg",
-    "static/media/i5.jpg": "/Afterbar/static/media/i5.9ede4596.jpg"
+    "static/media/m1.jpg": "/Afterbar/static/media/m1.9ede4596.jpg",
+    "static/media/m2.jpg": "/Afterbar/static/media/m2.a16e723c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7f38874c.js",
-    "static/js/2.4f10aa6f.chunk.js",
-    "static/css/main.c4b905d8.chunk.css",
-    "static/js/main.aafb84fa.chunk.js"
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.8aefe51e.chunk.js",
+    "static/css/main.fa692f56.chunk.css",
+    "static/js/main.9aec8c70.chunk.js"
   ]
 }
