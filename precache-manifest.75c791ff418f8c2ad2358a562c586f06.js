@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ec608e7b17aa051ec0448f26641dc4f",
+    "revision": "0e443fb1911feedecd5520365937a4e0",
     "url": "/Afterbar/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Afterbar/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "61a89b3509a1f30542f6",
-    "url": "/Afterbar/static/css/main.fa692f56.chunk.css"
+    "revision": "614630c3e0451a72b335",
+    "url": "/Afterbar/static/css/main.c8573c67.chunk.css"
   },
   {
     "revision": "828d799fd8cc2bc2f9c6",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Afterbar/static/js/2.8aefe51e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "61a89b3509a1f30542f6",
-    "url": "/Afterbar/static/js/main.9aec8c70.chunk.js"
+    "revision": "614630c3e0451a72b335",
+    "url": "/Afterbar/static/js/main.56ffa298.chunk.js"
   },
   {
     "revision": "4205841d2a0d316f2a9c",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Afterbar/static/media/5.4f36db9c.jpg"
   },
   {
-    "revision": "e05e80e2df8f2bffcd7687a07e44c127",
-    "url": "/Afterbar/static/media/6.e05e80e2.jpg"
+    "revision": "828203348e4b5a71357eb12f7afb51e8",
+    "url": "/Afterbar/static/media/6.82820334.jpg"
   },
   {
     "revision": "595ed365985d5a7452b7dad46e77373c",
