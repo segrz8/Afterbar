@@ -1,5 +1,13 @@
 .Slider {
     img {
         object-fit: cover;
+        height: 225px;
+        max-width: 1024px;
+
+        @media(min-width: 1024px) {
+            height: 555px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
